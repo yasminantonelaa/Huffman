@@ -1,7 +1,5 @@
-# Carregar dados do CSV
 dados <- read.csv("comparacoes.csv")
 
-# Converter os dados para formato longo (long format) para plotar múltiplas linhas
 library(reshape2)
 dados_longos <- melt(dados, id.vars = "Numero",
                      variable.name = "TipoFila",
